@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa - Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left" id="nav-categorias">
+                <img src="img/Gemini_Generated_Image_qwh393qwh393qwh3.png" alt="Logo Tienda" class="logo">
+                <a href="Home.html">Inicio</a>
+                <a href="#" data-categoria="buzos">Buzos</a>
+                <a href="#" data-categoria="pantalones">Pantalones</a>
+                <a href="#" data-categoria="remeras">Remeras</a>
+                <a href="#" data-categoria="camisas">Camisas</a>
+            </div>
+            <div class="nav-right">
+                <a href="carrito.html" class="cart-button">
+                    Carrito <span id="cart-count" style="background-color: white; color: black; border-radius: 50%; padding: 2px 6px; font-size: 0.8em; margin-left: 5px;">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="display:flex; flex-wrap: wrap; gap: 20px; padding: 20px;">
+        <div style="flex: 3; min-width: 300px;">
+            <section class="filtros-container" style="margin-bottom: 20px; background: #f9f9f9; padding: 15px; border-radius: 8px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+                <h2 style="margin-right: 15px;">Filtros</h2>
+                <input type="text" id="filtro-nombre" placeholder="Buscar por nombre..." style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; flex-grow: 1;">
+                <select id="filtro-categoria" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; flex-grow: 1;">
+                    <option value="todos">Todas las categorías</option>
+                    <option value="buzos">Buzos</option>
+                    <option value="pantalones">Pantalones</option>
+                    <option value="remeras">Remeras</option>
+                    <option value="camisas">Camisas</option>
+                </select>
+            </section>
+            <section id="productos-container" class="product-grid three-cols"></section>
+        </div>
+        <aside class="carrito-container" style="flex: 1; min-width: 280px; background: #f9f9f9; padding: 15px; border-radius: 8px;">
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-items"></div>
+            <p class="carrito-total" style="font-weight: bold; margin-top: 15px;">Total: <span id="carrito-total-precio">$0.00</span></p>
+            <button id="vaciar-carrito" style="width:100%; padding:10px; background-color:red; color:white; border:none; cursor:pointer; border-radius: 8px; margin-top:10px;">Vaciar Carrito</button>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
