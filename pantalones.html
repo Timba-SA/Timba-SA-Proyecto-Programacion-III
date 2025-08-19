@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalones - Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="Home.html">
+                    <img src="img/Gemini_Generated_Image_qwh393qwh393qwh3.png" alt="Logo Tienda" class="logo">
+                </a>
+                <a href="Home.html">Inicio</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filters">
+            <h2>Filtros</h2>
+            <form>
+                <label for="price-range">Rango de precios:</label>
+                <select id="price-range">
+                    <option value="all">Todos</option>
+                    <option value="low">Menos de $110</option>
+                    <option value="medium">$110 - $120</option>
+                    <option value="high">Más de $120</option>
+                </select>
+
+                <label for="color">Color:</label>
+                <select id="color">
+                    <option value="all">Todos</option>
+                    <option value="gray">Gris</option>
+                    <option value="brown">Marrón</option>
+                    <option value="blue">Azul</option>
+                </select>
+
+                <label for="sort">Ordenar por:</label>
+                <select id="sort">
+                    <option value="asc">Precio: Menor a Mayor</option>
+                    <option value="desc">Precio: Mayor a Menor</option>
+                </select>
+
+                <button type="submit">Aplicar</button>
+            </form>
+        </section>
+
+        <section class="product-section">
+            <h2>Pantalones</h2>
+            <div class="product-grid four-cols">
+                <div class="product-card">
+                    <img src="img/Cargo gris oscuro.jpeg" alt="Cargo Gris Oscuro">
+                    <p>Cargo Gris Oscuro</p>
+                    <span>$110</span>
+                </div>
+                <div class="product-card">
+                    <img src="img/Cargo gris.jpeg" alt="Cargo Gris">
+                    <p>Cargo Gris</p>
+                    <span>$115</span>
+                </div>
+                <div class="product-card">
+                    <img src="img/Cargo marron.jpeg" alt="Cargo Marrón">
+                    <p>Cargo Marrón</p>
+                    <span>$115</span>
+                </div>
+                <div class="product-card">
+                    <img src="img/Pantalon azul cargo.jpeg" alt="Pantalón Azul Cargo">
+                    <p>Pantalón Azul Cargo</p>
+                    <span>$120</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

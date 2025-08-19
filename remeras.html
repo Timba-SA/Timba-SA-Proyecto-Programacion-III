@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remeras - Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="Home.html">
+                    <img src="img/Gemini_Generated_Image_qwh393qwh393qwh3.png" alt="Logo Tienda" class="logo">
+                </a>
+                <a href="Home.html">Inicio</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filters">
+            <h2>Filtros</h2>
+            <form>
+                <label for="price-range">Rango de precios:</label>
+                <select id="price-range">
+                    <option value="all">Todos</option>
+                    <option value="low">Menos de $80</option>
+                    <option value="medium">$80 - $85</option>
+                    <option value="high">Más de $85</option>
+                </select>
+
+                <label for="color">Color:</label>
+                <select id="color">
+                    <option value="all">Todos</option>
+                    <option value="white">Blanco</option>
+                    <option value="gray">Gris</option>
+                    <option value="black">Negro</option>
+                </select>
+
+                <label for="sort">Ordenar por:</label>
+                <select id="sort">
+                    <option value="asc">Precio: Menor a Mayor</option>
+                    <option value="desc">Precio: Mayor a Menor</option>
+                </select>
+
+                <button type="submit">Aplicar</button>
+            </form>
+        </section>
+
+        <section class="product-section">
+            <h2>Remeras</h2>
+            <div class="product-grid four-cols">
+                <div class="product-card">
+                    <img src="img/Remera Blanca.jpeg" alt="Remera Blanca">
+                    <p>Remera Blanca</p>
+                    <span>$80</span>
+                </div>
+                <div class="product-card">
+                    <img src="img/Remera Gris.jpeg" alt="Remera Gris">
+                    <p>Remera Gris</p>
+                    <span>$80</span>
+                </div>
+                <div class="product-card">
+                    <img src="img/Remera Negra.jpeg" alt="Remera Negra">
+                    <p>Remera Negra</p>
+                    <span>$80</span>
+                </div>
+                <div class="product-card">
+                    <img src="img/Remera 24.jpeg" alt="Remera 24">
+                    <p>Remera 24</p>
+                    <span>$85</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
